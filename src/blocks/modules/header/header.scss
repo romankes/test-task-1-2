@@ -1,0 +1,43 @@
+.header {
+    height: 45px;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #00000072;
+    &__burger {
+        right: 20px;
+        top: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {  
+        &__wrapper {
+            position: absolute;
+            height: 100vh;
+            background-color: #000000c0;
+            width: 30%;
+            transition: 0.5s;
+            transform: translateX(-100%);
+            &_active {
+                transform: translateX(0%);
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .header {  
+        &__wrapper {
+            width: 45%;
+        }
+    }
+}
+@media (max-width: 375px) {
+    .header {  
+        &__wrapper {
+            width: 55%;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.scrollbar-thumb {
+    width: 7px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #95e1d3;
+    border-radius: 4px;
+}
+
+.scrollbar-track-y {
+    top: 0;
+    right: 0;
+    width: 7px;
+    height: 100%;
+    border-radius: 4px;
+}
+.scrollbar-track {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    background: #f5f5f5;
+    user-select: none;
+    border-radius: 4px;
+    &.show {
+        transition-delay: 0s;
+        opacity: 1;
+    }
+    &:hover {
+        transition-delay: 0s;
+        opacity: 1;
+    }
+}

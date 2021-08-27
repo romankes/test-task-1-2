@@ -1,0 +1,34 @@
+.service {
+    height: 555px;
+    padding-top: 100px;
+    background-color: #f7f7f7;
+    &__title {
+        margin: 0 auto;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 120px);
+    }
+}
+
+@media (max-width: 991px) {
+    .service {
+        height: 675px;
+        &__wrapper {
+            
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 120px);
+        }
+    }
+}
+@media (max-width: 525px) {
+    .service {
+        padding-top: 25px;
+        height: 1000px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 140px);
+        }
+    }
+}

@@ -1,0 +1,126 @@
+.slide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    padding-top: 50px;
+    &__title {
+        font-family: 'KaushanScript';
+        color: white;
+        font-size: 62px;
+    }
+    &__subtitle {
+        font-family: 'Montserrat';
+        font-size: 150px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        margin-top: 60px;
+        line-height: 150px;
+    }
+    &__line {
+        width: 60px;
+        height: 3px;
+        background-color: white;
+        margin-top: 75px;
+    }
+
+    &__button {
+        cursor: pointer;
+        margin-top: 50px;
+        width: 160px;
+        height: 40px;
+        outline: none;
+        background-color: transparent;
+        border: 3px solid white;
+        color: white;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 1200px) {
+    .slide {
+        &__title {
+            margin-top: 0;
+            font-size: 45px;
+        }
+        &__subtitle {
+            line-height: 110px;
+            margin-top: 10px;
+            font-size: 100px;
+        }
+        &__button {
+            margin-top: 30px;
+        }
+        &__line {
+            margin-top: 35px;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .slide {
+        &__title {
+            margin-top: 0;
+            font-size: 35px;
+        }
+        &__subtitle {
+            line-height: 90px;
+            margin-top: 10px;
+            font-size: 80px;
+
+        }
+        &__button {
+            margin-top: 20px;
+            width: 120px;
+            height: 35px;
+            font-size: 13px;
+        }
+        &__line {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media (max-width: 525px) {
+    .slide {
+        &__title {
+            margin-top: 0;
+            font-size: 25px;
+        }
+        &__subtitle {
+            line-height: 70px;
+            margin-top: 10px;
+            font-size: 50px;
+
+        }
+        &__button {
+            margin-top: 40px;
+            width: 120px;
+            height: 35px;
+            font-size: 13px;
+        }
+        &__line {
+            margin-top: 35px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .slide {
+        &__title {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        &__subtitle {
+            line-height: 70px;
+            font-size: 40px;
+        }
+    }  
+}

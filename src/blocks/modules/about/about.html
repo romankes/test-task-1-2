@@ -1,0 +1,47 @@
+<section class="about">
+    <div class="container">
+        @@include("../label/label.html", {
+            "class": "about__title",
+            "title": "What we do",
+            "subtitle": "Story about us",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        })
+        <div class="about__cards">
+            @@include("../about-card/about-card.html", {
+                "img": "../../../img/about-img-1.png"
+            })
+            @@include("../about-card/about-card.html", {
+                "img": "../../../img/about-img-2.png"
+            })
+            @@include("../about-card/about-card.html", {
+                "img": "../../../img/about-img-3.png"
+            })
+        </div>
+    </div>
+    <div class="about__statistics">
+        <div class="container">
+            <div class="about__wrapper">
+                @@include("../statistic/statistic.html", {
+                    "total": "42",
+                    "title": "web design project"
+                })
+                @@include("../statistic/statistic.html", {
+                    "total": "123",
+                    "title": "happy client"
+                })
+                @@include("../statistic/statistic.html", {
+                    "total": "15",
+                    "title": "award winner"
+                })
+                @@include("../statistic/statistic.html", {
+                    "total": "99",
+                    "title": "cup of coffee"
+                })
+                @@include("../statistic/statistic.html", {
+                    "total": "24",
+                    "title": "members"
+                })
+            </div>
+        </div>
+    </div>
+</section>

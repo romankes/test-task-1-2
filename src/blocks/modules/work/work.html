@@ -1,0 +1,33 @@
+<section class="work">
+    <div class="container">
+        @@include("../label/label.html", {
+            "class": "response__title",
+            "title": "Service",
+            "subtitle": "What we Do",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        })
+        <div class="work__wrapper">
+            <img src="../../../img/work-men.png" alt="men" class="work__img">
+            <div class="work__accordions">
+                @@include("../accordion/accordion.html", {
+                    "title": "Photography",
+                    "img": "../../../img/icons/image.svg",
+                    "class": "accordion_active",
+                    "classSwitch": "accordion__switch_open"
+                })
+                @@include("../accordion/accordion.html", {
+                    "title": "creativity",
+                    "img": "../../../img/icons/setting.svg",
+                    "class": "",
+                    "classSwitch": ""
+                })
+                @@include("../accordion/accordion.html", {
+                    "title": "web design",
+                    "img": "../../../img/icons/black-hole.svg",
+                    "class": "",
+                    "classSwitch": ""
+                })
+            </div>
+        </div>
+    </div>
+</section>

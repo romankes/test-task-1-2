@@ -1,0 +1,34 @@
+<section class="promo">
+    <div class="container">
+        <div class="promo__wrapper">
+            <div class="promo__slider-wrapper">
+                <div class="promo__slider">
+
+                    @@include("../slide/slide.html")
+                    @@include("../slide/slide.html")
+                    @@include("../slide/slide.html")
+                    @@include("../slide/slide.html")
+
+                </div>
+            </div>
+            <ul class="promo__switchers">
+                @@include("../promo-switcher/promo-switcher.html", {
+                    "number": "01",
+                    "value": "Intro"  
+                })
+                @@include("../promo-switcher/promo-switcher.html", {
+                    "number": "02",
+                    "value": "Work"  
+                })
+                @@include("../promo-switcher/promo-switcher.html", {
+                    "number": "03",
+                    "value": "Contacts"  
+                })
+                @@include("../promo-switcher/promo-switcher.html", {
+                    "number": "04",
+                    "value": "Intro"  
+                })
+            </ul>
+        </div>
+    </div>
+</section>
